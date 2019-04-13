@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/tab_padding"
+        android:gravity="center">
+
+    <TextView
+            android:id="@+id/tv_chats"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/chats"
+            android:textColor="@color/whiteColor"/>
+
+    <TextView
+            android:id="@+id/chats_counter"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/shape_tab_counter"
+            android:gravity="center"
+            android:text="48"
+            android:visibility="visible"
+            android:layout_marginStart="5dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="12sp"
+    />
+
+</LinearLayout>

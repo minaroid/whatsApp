@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ChatDemo</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="chats">CHATS</string>
+    <string name="calls">CALLS</string>
+    <string name="status">STATUS</string>
+</resources>
