@@ -33,7 +33,7 @@ class MessagesAdapter : RecyclerView.Adapter<MessagesAdapter.ViewHolder>() {
         private val message = v.tv_message
 
         fun bind(msg: MessagesEntity) {
-            if (msg.user_id.toInt() == 1234) {
+            if (msg.user_id.toInt() == 2) {
                 message.isSelected = true
                 message.layoutParams.resolveLayoutDirection(View.LAYOUT_DIRECTION_RTL)
             }else{

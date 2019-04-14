@@ -41,33 +41,9 @@ class HomeViewModel(private val chatDataBase: ChatDataBase) : ViewModel() {
         disposable.add(insertSubscriberObservable.observeOn(Schedulers.io())
             .subscribe { chatDataBase.getSubscribersDao().upsert(it) })
 
+        // 1555191945571
 
 
-
-        for (x in 4..50000) {
-            insertRoomObservable.onNext(RoomsEntity(
-                        System.currentTimeMillis(),
-                        "Room-$x",
-                        "ffewfewfqfqw",
-                        "gfefewfewfbfb",
-                        Date(),
-                        5
-                    ))
-//            val list = ArrayList<RoomsEntity>()
-//            for (y in 1..500) {
-//                list.add(
-//                    RoomsEntity(
-//                        System.currentTimeMillis(),
-//                        "Room-$x",
-//                        "ffewfewfqfqw",
-//                        "gfefewfewfbfb",
-//                        Date(),
-//                        5
-//                    )
-//                )
-//            }
-//            insertAllRoomObservable.onNext(list)
-        }
     }
 
     override fun onCleared() {

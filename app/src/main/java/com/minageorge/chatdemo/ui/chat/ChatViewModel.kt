@@ -47,7 +47,7 @@ class ChatViewModel(private val chatDataBase: ChatDataBase) : ViewModel() {
 
     fun insertMessage(message: String) {
         insertMessagebservable
-            .onNext(MessagesEntity(System.currentTimeMillis(), roomId, 1234, message, Date()))
+            .onNext(MessagesEntity(System.currentTimeMillis(), roomId, 2, message, Date()))
     }
 
     override fun onCleared() {
